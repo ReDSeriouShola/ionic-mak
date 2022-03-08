@@ -1,0 +1,7 @@
+{
+  "name": "ionic-mak",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
