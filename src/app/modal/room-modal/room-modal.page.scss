@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 15vh;
+}
+
+/////////// BTN ////////////////
+.btn {
+    border-radius: 8px;
+    position: relative;
+    padding: 15px;
+    font-size: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    overflow: hidden;
+    /////////////////
+    z-index: 1;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.btn a {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover a {
+    letter-spacing: 2px;
+}
+
+.btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+.btn:hover a::before {
+    transform: skewX(45deg) translateX(100px);
+}
+
+/////////// BTN-CLOSE //////////////////////////////////////////
+////////////////////// HEADER //////////////////////////////////
+ion-header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    gap: 7vh;
+    padding: 20px 10px;
+}
+
+ion-header ion-icon {
+    position: absolute;
+}
+
+ion-header::after {
+    background-image: none;
+}
+
+ion-header .info {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vh;
+}
+
+ion-header .info p {
+    font-size: 3vh;
+}
+
+ion-header .close {
+    left: -5vh;
+    top: 2px;
+    font-size: 5vh;
+    margin: 0%;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 2vh;
+}
+
+.icon ion-img {
+    width: 20vh;
+    border-radius: 20px;
+}
+
+////////////////////// HEADER-cLOSE ////////////////////////////
+////////////////////// CONTENT /////////////////////////////////
+.debt {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    height: 100%;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+////////////////////// CONTENT-CLOSE ///////////////////////////
+////////////////////// @MEDIAQUERY /////////////////////////////
+@media screen and (max-width: 600px) {}
+
+////////////////////// @MEDIAQUERY-CLOSE //////////////////////

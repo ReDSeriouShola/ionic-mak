@@ -1,27 +1,92 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.header {
+    background: #F3E9DD;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2vh;
+    color: black;
+    margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+/////////// BTN ////////////////
+.header .btn {
+    border-radius: 8px;
+    position: relative;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.1s;
+    color: black;
+}
+
+.header .btn:hover {
+    letter-spacing: 4px;
+    border: 3px solid #DAB88B;
+}
+
+/////////// BTN-CLOSE //////////////////////////////////////////
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container .serviceBox {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
+    overflow: hidden;
+}
+
+.container .serviceBox .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    gap: 2vh;
+}
+
+//
+.container .serviceBox .icon h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+//
+.container .serviceBox .icon ion-icon {
+    font-size: 5rem;
+    color: #fff;
+    //transition: 0.5s;
 }
